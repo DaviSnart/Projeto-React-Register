@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import GlobalStyle from './globalStyle.js';
+//importando com o default eu coloco da maneira como está
+// em cima, se não for por default eu coloco o nome entre as {}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+ReactDOM.render(
+    <>
+        <App /> <GlobalStyle />
+    </>,
+    document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/*no react os componentes sempre tem que ficar dentro de outro componente Pai, senão não roda
+por isso colocamos o nosso app e o nosso globalStyles dentro de uma div*/
