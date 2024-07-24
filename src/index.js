@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import GlobalStyle from './globalStyle.js';
+import GlobalStyle from './styles/globalStyle.js';
+import Routes from './routes';
 //importando com o default eu coloco da maneira como está
 // em cima, se não for por default eu coloco o nome entre as {}
 
 
 ReactDOM.render(
     <>
-        <App /> <GlobalStyle />
+        <Routes /> <GlobalStyle />
     </>,
     document.getElementById("root")
 );
